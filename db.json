@@ -1,0 +1,38 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "meaning": "sit",
+      "image": "https://www.lifeprint.com/asl101/gifs/s/sit.gif"
+    }
+  ],
+  "letters": [
+    {
+      "id": 1,
+      "meaning": "a",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/a.gif"
+    },
+    {
+      "id": 2,
+      "meaning": "b",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/b.gif"
+    },
+    {
+      "id": 3,
+      "meaning": "c",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/c.gif"
+    },
+    {
+      "id": 4,
+      "meaning": "d",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/d.gif"
+    },
+    {
+      "id": 5,
+      "meaning": "e",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/e.gif"
+    }
+
+
+  ]
+}
