@@ -1,10 +1,18 @@
 import React from "react";
+import {Card, Image} from 'semantic-ui-react';
 
 function SignCard({word}) {
+
+    console.log(word)
     return (
-        <div>
-            <img src={word.image} alt={word.meaning} />
-        </div>
+        <Card className="card">
+            <Image src={word.image} alt={word.meaning} className="card-images"/>
+            <Card.Content>
+                <Card.Description>
+                    <p>{word.meaning}</p>
+                    </Card.Description>
+            </Card.Content>
+        </Card>
     )
 }
 

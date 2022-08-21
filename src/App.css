@@ -9,82 +9,118 @@ html, body {
     width: 100%;
 }
 
-header {
-    background-color: #006BA6;
-    padding: 2rem 2rem 2rem 2rem; 
+.App {
+    height: 100%;
 }
 
-header img {
-    width:20%;
+html {
+    background-color: ghostwhite;
+
 }
 
-.container {
-    width:100%;
-    display:flex;
+.footer {
+    text-align: center;
+    clear: both;
+    background-color: darkslategray;
+    position:fixed;
+    bottom:0px;
+    width: 100%;
 }
 
-#reorder-container {
-    width:20%;
-    height:auto;
-    padding-left:2rem;
-    padding-right:2rem;
-    background-color: #FFBC42;
-    padding-bottom: 2rem;
+.footer p {
+    text-align: center;
+    font-size: x-large;
+    margin: 10px;
+    color: white;
+    
 }
 
-#reorder-container div {
-    display:flex;
-    flex-wrap: wrap;
-    gap: .5rem;
+.footer div {
+    text-align: center;
+    font-size: larger;
+    color: lightblue;
+    padding-bottom: 5px;
 }
 
-#current-inventory {
-    width:80%;
-    height:auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+.welcome {
+    text-align: center;
+    margin: 10%;
+    height: 100%;
 }
 
-#current-inventory div {
-    display:flex;
-    flex-wrap: wrap;
-    gap:.5rem;
+.welcome p {
+    font-size: large;
+}
+
+
+.footer img {
+    position:fixed;
+    bottom:0px;
+    left:30%;
+
+    width: 40%;
+}
+
+img {
+    height: 125px;
+    width: auto;
+}
+
+#inputbar {
+    text-align: center;
+    border: 2px solid black;
+    padding-bottom: 20px;
+    background-color: lightgrey;
+}
+
+.sign-container {
+    width: 100%;
+    overflow-y: auto;
+    height: 540px;
 }
 
 .card {
-    border: 1px solid black;
-    border-radius: 4px;
+    float: left;
+    width: 12.5%;
+    outline-offset: -1px;
+    outline: 1px solid black;
+    height: 270px;
     background-color: white;
-    align-items: center;
-    padding:1rem;
 }
 
-#current-inventory .card {
-    display:flex;
-    flex-direction: column;
-    width:15rem;
+header {
+    height: 40px;
+    background-color: darkslategray;
+   
 }
 
-#reorder-container .card {
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    padding:1rem;
+.card p {
+    text-align: center;
+    height: 70px;
 }
 
-.card img {
-    width:6em;
-    height:6em;
+.card-images {
+    text-align: center;
+    width: 100%;
 }
 
-button {
-    border: 1px solid black;
-    border-radius: 4px;
-    background-color: white;
-    background-color: #F15946;
+nav#navbar{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
     color: white;
-    font-family: 'Ultra', serif;
-    font-size: 1rem;
+    
+}
+
+.forms {
+    text-align: center;
+}
+
+.link {
+    color: white;
+    margin: 10%;
+    text-align: center;
+    display: inline;
+    font-size: xx-large;
+    vertical-align: middle;
 }

@@ -2,13 +2,6 @@
   "words": [
     {
       "id": 1,
-      "meaning": "sit",
-      "image": "https://www.lifeprint.com/asl101/gifs/s/sit.gif"
-    }
-  ],
-  "letters": [
-    {
-      "id": 1,
       "meaning": "a",
       "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/a.gif"
     },
@@ -31,8 +24,121 @@
       "id": 5,
       "meaning": "e",
       "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/e.gif"
+    },
+    {
+      "id": 6,
+      "meaning": "f",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/f.gif"
+    },
+    {
+      "id": 7,
+      "meaning": "g",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/g.gif"
+    },
+    {
+      "id": 8,
+      "meaning": "h",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/h.gif"
+    },
+    {
+      "id": 9,
+      "meaning": "i",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/i.gif"
+    },
+    {
+      "id": 10,
+      "meaning": "j",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/j.gif"
+    },
+    {
+      "id": 11,
+      "meaning": "k",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/k.gif"
+    },
+    {
+      "id": 12,
+      "meaning": "l",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/l.gif"
+    },
+    {
+      "id": 13,
+      "meaning": "m",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/m.gif"
+    },
+    {
+      "id": 14,
+      "meaning": "n",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/n.gif"
+    },
+    {
+      "id": 15,
+      "meaning": "o",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/o.gif"
+    },
+    {
+      "id": 16,
+      "meaning": "p",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/p.gif"
+    },
+    {
+      "id": 17,
+      "meaning": "q",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/q.gif"
+    },
+    {
+      "id": 18,
+      "meaning": "r",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/r.gif"
+    },
+    {
+      "id": 19,
+      "meaning": "s",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/s.gif"
+    },
+    {
+      "id": 20,
+      "meaning": "t",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/t.gif"
+    },
+    {
+      "id": 21,
+      "meaning": "u",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/u.gif"
+    },
+    {
+      "id": 22,
+      "meaning": "v",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/v.gif"
+    },
+    {
+      "id": 23,
+      "meaning": "w",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/w.gif"
+    },
+    {
+      "id": 24,
+      "meaning": "x",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/x.gif"
+    },
+    {
+      "id": 25,
+      "meaning": "y",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/y.gif"
+    },
+    {
+      "id": 26,
+      "meaning": "e",
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/26.gif"
+    },
+    {
+      "id": 28,
+      "meaning": "sit",
+      "image": "https://www.lifeprint.com/asl101/gifs/s/sit.gif"
+    },
+    {
+      "meaning": "?",
+      "image": "https://res.cloudinary.com/spiralyze/image/upload/f_auto,w_1414/BabySignLanguage/DictionaryPages/ask-webp.webp",
+      "id": 29
     }
-
-
   ]
 }

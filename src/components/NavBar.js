@@ -4,22 +4,17 @@ import {Link} from "react-router-dom"
 function NavBar() {
 
     return(
-        <nav>
+      <header>
+        <nav id="navbar">
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/form">Add Word</Link>
-            </li>
-            <li>
-              <Link to="/input">What to Type</Link>
-            </li>
-            <li>
-              <Link to="/container">Result</Link>
-            </li>
+              <Link className="link" to="/">Home</Link>  |        
+              <Link className="link" to="/form">Add Word</Link> |
+              <Link className="link" to="/input">Translate</Link>           
           </ul>
+            
+            
         </nav>
+      </header>
     )
 }
 
