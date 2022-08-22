@@ -128,7 +128,7 @@
     {
       "id": 26,
       "meaning": "e",
-      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/26.gif"
+      "image": "https://www.lifeprint.com/asl101/fingerspelling/abc-gifs/z.gif"
     },
     {
       "id": 28,
@@ -139,6 +139,93 @@
       "meaning": "?",
       "image": "https://res.cloudinary.com/spiralyze/image/upload/f_auto,w_1414/BabySignLanguage/DictionaryPages/ask-webp.webp",
       "id": 29
+    },
+    {
+      "meaning": "love",
+      "image": "http://www.lifeprint.com/asl101/gifs/l/love.gif",
+      "id": 30
+    },
+    {
+      "meaning": "you",
+      "image": "https://www.lifeprint.com/asl101/signjpegs/y/you.ht1.jpg",
+      "id": 31
+    },
+    {
+      "meaning": "different",
+      "image": "https://www.lifeprint.com/asl101/gifs-animated/but.gif",
+      "id": 32
+    },
+    {
+      "meaning": "but",
+      "image": "https://www.lifeprint.com/asl101/gifs-animated/but.gif",
+      "id": 33
+    },
+    {
+      "meaning": "name",
+      "image": "https://www.lifeprint.com/asl101/gifs/n/name.gif",
+      "id": 34
+    },
+    {
+      "meaning": "what",
+      "image": "https://www.lifeprint.com/asl101/gifs/w/what.gif",
+      "id": 35
+    },
+    {
+      "meaning": "when",
+      "image": "https://www.lifeprint.com/asl101/gifs/w/when.gif",
+      "id": 36
+    }
+  ],
+  "highscores": [
+    {
+      "id": 1,
+      "score": 0,
+      "scorer": "Empty"
+    },
+    {
+      "id": 2,
+      "score": 0,
+      "scorer": "Empty"
+    },
+    {
+      "id": 3,
+      "score": 0,
+      "scorer": "Empty"
+    },
+    {
+      "id": 4,
+      "score": 0,
+      "scorer": "Empty"
+    },
+    {
+      "id": 5,
+      "score": 0,
+      "scorer": "Empty"
+    },
+    {
+      "id": 6,
+      "score": 0,
+      "scorer": "Empty"
+    },
+    {
+      "id": 7,
+      "score": 0,
+      "scorer": "Empty"
+    },
+    {
+      "id": 8,
+      "score": 0,
+      "scorer": "Empty"
+    },
+    {
+      "id": 9,
+      "score": 0,
+      "scorer": "Empty"
+    },
+    {
+      "id": 10,
+      "score": 0,
+      "scorer": "Empty"
     }
   ]
 }

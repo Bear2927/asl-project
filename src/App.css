@@ -109,6 +109,7 @@ nav#navbar{
     font-size: larger;
     font-weight: bold;
     color: white;
+    vertical-align: middle;
     
 }
 
@@ -118,9 +119,50 @@ nav#navbar{
 
 .link {
     color: white;
-    margin: 10%;
+    margin: 5%;
     text-align: center;
     display: inline;
-    font-size: xx-large;
+    font-size: x-large;
+    
+}
+
+td {
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+    outline-offset: -2px;
+    width: 125px;
+    height: 125px;
+    text-align: center;
     vertical-align: middle;
+}
+
+th {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    margin: auto;
+}
+
+table {
+    text-align: center;
+    margin: auto;
+    
+}
+
+td img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.practice-select {
+    height: auto;
+    padding: 10px;
+}
+
+.practice-game {
+    overflow-y: auto;
+    margin-bottom: 125px;
+    text-align: center;
 }

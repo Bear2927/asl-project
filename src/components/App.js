@@ -10,6 +10,7 @@ import SignCardContainer from "./SignCardContainer";
 import "../App.css";
 import Welcome from "./Welcome";
 import Footer from "./Footer";
+import PracticeGameManager from "./PracticeGameManager";
 
 
 function App() {
@@ -161,7 +162,10 @@ function App() {
                 <SignCardContainer statement={createStatement()}/>]} 
             />
 
+            <Route path="/practice" element={(signWords.length > 0) ? <PracticeGameManager signs={signWords} /> : null} />
+
             <Route exact path="/" element={<Welcome />} />
+
             <Route path="*" element={<h3>Error 404: Page Not Found</h3>} />
         </Routes>
         <Footer/>
