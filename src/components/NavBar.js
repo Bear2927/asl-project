@@ -10,7 +10,8 @@ function NavBar() {
               <Link className="link" to="/">Home</Link>  |        
               <Link className="link" to="/form">Add Word</Link> |
               <Link className="link" to="/input">Translate</Link> | 
-              <Link className="link" to="/practice">Practice</Link>        
+              <Link className="link" to="/practice">Practice</Link> |
+              <Link className="link" to="/glossary">Glossary</Link>
           </ul>
             
             

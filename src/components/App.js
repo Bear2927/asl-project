@@ -11,6 +11,7 @@ import "../App.css";
 import Welcome from "./Welcome";
 import Footer from "./Footer";
 import PracticeGameManager from "./PracticeGameManager";
+import Glossary from "./Glossary";
 
 
 function App() {
@@ -167,6 +168,8 @@ function App() {
             <Route exact path="/" element={<Welcome />} />
 
             <Route path="*" element={<h3>Error 404: Page Not Found</h3>} />
+
+            <Route path="/glossary" element={<Glossary signs={signWords}/>}/>
         </Routes>
         <Footer/>
 
