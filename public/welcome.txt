@@ -1,4 +1,5 @@
 This application is intended to help teach users how to use ASL (American Sign Language) through image cards.
-To get started, click the 'Translate' tab and enter desired statement to be translated into ASL. You will be shown
-images for each word typed. If a word isn't found in our database, it will be written in letters. Want to contribute
-to our dictionary with a new word? Try the 'Add Word' tab to be sent to our word form which takes a word and an image url.
+ASL is a natural sign based language that is popular amongst the deaf community. To get started, click the 'Translate' 
+tab and enter desired statement to be translated into ASL. You will be shown images for each word typed. If a word isn't 
+found in our database, it will be written in letters. Want to contribute to our dictionary with a new word? Try the 
+'Add Word' tab to be sent to our word form which takes a word and an image url.
