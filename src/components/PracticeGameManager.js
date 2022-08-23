@@ -31,15 +31,16 @@ function PracticeGameManager({signs}) {
     function handleAddClicked(tileData) {
 
         if(firstClick === null)
-        { 
+        {   
+            modifySignData(tileData, "clicked", true)
+            tileData.clicked = true;
             setFirstClick(tileData)
         }
         else 
         {
 
-            if ((firstClick.sign.meaning === tileData.sign.meaning) && (firstClick.sign.id !== tileData.sign.id))
+            if ((firstClick.sign.meaning === tileData.sign.meaning) && (firstClick.content !== tileData.content))
             {
-                console.log("Matched!")
                 setTurns(() => turns + 1)
                 setMatchesMade(() => matchesMade + 1)
                 
@@ -48,6 +49,7 @@ function PracticeGameManager({signs}) {
                         if (tile.id === tileData.id) 
                         {
                             tileData.visible = false
+                            tileData.clicked = true
                             return tileData
                         }
                         else if (tile.id === firstClick.id)
@@ -56,6 +58,7 @@ function PracticeGameManager({signs}) {
                                 content: firstClick.content,
                                 sign: firstClick.sign,
                                 visible: false,
+                                clicked: true,
                                 id: firstClick.id
                             }
                         }
@@ -73,7 +76,8 @@ function PracticeGameManager({signs}) {
                 }
             }
             else
-            {
+            {   
+                modifySignData(firstClick, "clicked", false)
                 setTurns(() => turns + 1)
                 setFirstClick(null)
             }
@@ -90,16 +94,29 @@ function PracticeGameManager({signs}) {
 
     function modifySignData(tileData, attribute, value) {
         let temp = boardData.map(row => row.map(tile => {
-            if (tile.id === firstClick.id)
-                        {
-                            return {
-                                content: firstClick.content,
-                                sign: firstClick.sign,
-                                visible: false,
-                                id: firstClick.id
-                            }
-                        }
-        }))
+            if (tile.id === tileData.id)
+            {
+                let tempTile = {
+                    content: tileData.content,
+                    sign: tileData.sign,
+                    visible: tileData.visible,
+                    clicked: tileData.clicked,
+                    id: tileData.id
+                }
+
+                tempTile[attribute] = value;
+
+                return tempTile
+            }
+            else
+            {
+                return tile;
+            }
+
+            })
+        )
+        
+        setBoardData(temp)
     }
 
     function handleNewHigh(turns) {
@@ -108,9 +125,10 @@ function PracticeGameManager({signs}) {
         let placed = false;
         let score = difficulty * difficulty - turns
         if (score < 0) {score = 0}
+        
         for (let i = 0; i < hs.length; i++)
         {
-            if (hs[i].score < score && !placed)
+            if (hs[i].score <= score && !placed)
             {
                 let scorer = prompt("What is your name?", "")
                 hs.splice(i, 0, {
@@ -167,8 +185,8 @@ function PracticeGameManager({signs}) {
 
         for (let i = 0; i < signsCount; i++) {
             let index = Math.floor(Math.random() * signs.length)
-            signsList.push({content: "image", sign: signs[index], visible: true, id: `${i}image`})
-            signsList.push({content: "meaning", sign: signs[index], visible: true, id: `${i}meaning`})
+            signsList.push({content: "image", sign: signs[index], visible: true, id: `${i}image`, clicked: false})
+            signsList.push({content: "meaning", sign: signs[index], visible: true, id: `${i}meaning`, clicked: false})
         }
 
         signsList = shuffleBoard(signsList);
