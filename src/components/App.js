@@ -11,6 +11,7 @@ import "../App.css";
 import Welcome from "./Welcome";
 import Footer from "./Footer";
 import PracticeGameManager from "./PracticeGameManager";
+import Glossary from "./Glossary";
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
     const [formImage, setFormImage] = useState("");
     const [formRemove, setFormRemove] = useState("")
     const [userInput, setUserInput] = useState("");
-    
+    const [searchGlossary, setSearchGlossary] = useState("");
+     
     useEffect(() => {
         fetch("http://localhost:8001/words")
         .then(res => res.json())
@@ -149,6 +151,12 @@ function App() {
 
     }
 
+    const filteredGlossary = signWords.filter(sign => sign.meaning.toLowerCase().includes(searchGlossary.toLowerCase()))
+
+    function handleSearchInput(e) {
+        setSearchGlossary(e.target.value)
+    }
+
     return(
         <div className="App">
         <NavBar/>
@@ -167,6 +175,8 @@ function App() {
             <Route exact path="/" element={<Welcome />} />
 
             <Route path="*" element={<h3>Error 404: Page Not Found</h3>} />
+
+            <Route path="/glossary" element={<Glossary signs={filteredGlossary} searchInput={handleSearchInput}/>}/>
         </Routes>
         <Footer/>
 
