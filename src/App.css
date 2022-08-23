@@ -15,51 +15,72 @@ html, body {
 
 html {
     background-color: ghostwhite;
-
+    background-image: url("/public/hands-deaf-mute-seamless-pattern-background-vector-21134054.jpg");
+    background-attachment: fixed;
 }
 
 .footer {
     text-align: center;
     clear: both;
-    background-color: darkslategray;
+    background-color: orange;
     position:fixed;
-    bottom:0px;
+    bottom:-10px;
     width: 100%;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
 }
 
 .footer p {
     text-align: center;
     font-size: x-large;
-    margin: 10px;
-    color: white;
+    margin: auto;
+    color: black;
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: orange;
+    width: 20%;
+    margin-bottom: 10px;
     
 }
 
 .footer div {
     text-align: center;
-    font-size: larger;
+    font-size: medium;
     color: lightblue;
     padding-bottom: 5px;
+}
+
+.footer a {
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 6px;
+    border-color: orange;
+    padding: 2px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+
 }
 
 .welcome {
     text-align: center;
     margin: 10%;
     height: 100%;
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
 }
 
 .welcome p {
     font-size: large;
 }
 
-
-.footer img {
-    position:fixed;
-    bottom:0px;
-    left:30%;
-
-    width: 40%;
-}
 
 img {
     height: 125px;
@@ -70,13 +91,21 @@ img {
     text-align: center;
     border: 2px solid black;
     padding-bottom: 20px;
-    background-color: lightgrey;
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
+    width: 60%;
+    margin: auto;
+    margin-top: 3%;
 }
 
 .sign-container {
     width: 100%;
     overflow-y: auto;
-    height: 540px;
+    height: 450px;
+    padding-bottom: 125px;
 }
 
 .card {
@@ -90,7 +119,7 @@ img {
 
 header {
     height: 40px;
-    background-color: darkslategray;
+   
    
 }
 
@@ -108,29 +137,57 @@ nav#navbar{
     text-align: center;
     font-size: larger;
     font-weight: bold;
-    color: white;
-    vertical-align: middle;
+    vertical-align: middle; 
+    background-color: orange;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
+    margin: auto;
     
 }
 
 .forms {
     text-align: center;
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    padding-bottom: 20px;
 }
 
 .link {
-    color: white;
-    margin: 5%;
     text-align: center;
     display: inline;
-    font-size: x-large;
+    font-size: large;
+    color: black;
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    width: 10;
     
 }
 
+.link:visited {
+    color: black;
+}
+
 td {
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: black;
-    outline-offset: -2px;
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
     width: 125px;
     height: 125px;
     text-align: center;
@@ -165,6 +222,7 @@ td img {
     overflow-y: auto;
     margin-bottom: 125px;
     text-align: center;
+    margin-top: 3%;
 }
 
 .filter{
@@ -178,12 +236,13 @@ td img {
 
 .glossarytable{
     width: 600px;
+    background-color: darkorange;
 }
 
 .glossaryheader{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    color: rgb(0, 94, 94);
+    color: orange;
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
     
@@ -197,13 +256,19 @@ td img {
 }
 
 .board-tile:hover {
-    outline-color: darkslategray;
+    border-color: orange;
     outline-offset: -4px;
     outline-width: 4px;
 }
 
 .board-tile.clicked {
-    outline-color: darkslateblue;
+    border-color: orangered;
     outline-offset: -4px;
     outline-width: 4px;
+}
+
+.board-tile img {
+    max-width: 90%;
+    max-height: 90%;
+
 }
