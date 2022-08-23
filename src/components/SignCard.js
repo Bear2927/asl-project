@@ -3,7 +3,6 @@ import {Card, Image} from 'semantic-ui-react';
 
 function SignCard({word}) {
 
-    console.log(word)
     return (
         <Card className="card">
             <Image src={word.image} alt={word.meaning} className="card-images"/>

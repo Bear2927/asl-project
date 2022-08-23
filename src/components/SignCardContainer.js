@@ -5,9 +5,9 @@ import { Tab } from "semantic-ui-react";
 
 function SignCardContainer({statement}) {
 
+    let i = 0;
     const picList = statement.map(word => {
-        console.log(word)
-        return <SignCard key={word.id} word={word}/>
+        return <SignCard key={`${i++}${word.meaning}`} word={word}/>
     })
 
     return (

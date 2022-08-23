@@ -166,3 +166,24 @@ td img {
     margin-bottom: 125px;
     text-align: center;
 }
+
+.scoreboard {
+    list-style: none;
+    text-align: center;
+}
+
+.scoreboard p {
+    margin: 2px;
+}
+
+.board-tile:hover {
+    outline-color: darkslategray;
+    outline-offset: -4px;
+    outline-width: 4px;
+}
+
+.board-tile:active {
+    outline-color: darkslateblue;
+    outline-offset: -4px;
+    outline-width: 4px;
+}
