@@ -166,3 +166,23 @@ td img {
     margin-bottom: 125px;
     text-align: center;
 }
+
+.filter{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.glossary{
+    padding-bottom: 125px;
+}
+
+.glossarytable{
+    width: 600px;
+}
+
+.glossaryheader{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: rgb(0, 94, 94);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+}
