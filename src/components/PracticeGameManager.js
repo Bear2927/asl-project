@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import BoardTile from "./BoardTile";
+import Scoreboard from "./ScoreBoard";
 
 function PracticeGameManager({signs}) {
 
@@ -9,6 +10,7 @@ function PracticeGameManager({signs}) {
     const [difficulty, setDifficulty] = useState(2);
     const [turns, setTurns] = useState(0);
     const [matchesMade, setMatchesMade] = useState(0);
+    const [showScores, setShowScores] = useState(false);
     
 
     useEffect(() => {
@@ -35,12 +37,11 @@ function PracticeGameManager({signs}) {
         else 
         {
 
-            if (firstClick.sign.meaning === tileData.sign.meaning)
+            if ((firstClick.sign.meaning === tileData.sign.meaning) && (firstClick.sign.id !== tileData.sign.id))
             {
                 console.log("Matched!")
                 setTurns(() => turns + 1)
                 setMatchesMade(() => matchesMade + 1)
-                setFirstClick(null)
                 
                 let newData = boardData.map(row => {
                     return row.map(tile => {
@@ -58,10 +59,13 @@ function PracticeGameManager({signs}) {
                                 id: firstClick.id
                             }
                         }
-                        return tile
+                        else {
+                            return tile
+                        }
                     })
                 }) 
                 
+                setFirstClick(null)
                 setBoardData(newData)
                 if ((matchesMade + 1) >= (difficulty * difficulty / 2))
                 {
@@ -78,23 +82,74 @@ function PracticeGameManager({signs}) {
 
     function handleGameOver() {
 
-        handleNewHigh(turns)
+        handleNewHigh(turns + 1)
         setMatchesMade(0)
         setTurns(0)
         setBoardData(createBoard())
     }
 
+    function modifySignData(tileData, attribute, value) {
+        let temp = boardData.map(row => row.map(tile => {
+            if (tile.id === firstClick.id)
+                        {
+                            return {
+                                content: firstClick.content,
+                                sign: firstClick.sign,
+                                visible: false,
+                                id: firstClick.id
+                            }
+                        }
+        }))
+    }
+
     function handleNewHigh(turns) {
 
         let hs = [...highscores]
-
+        let placed = false;
+        let score = difficulty * difficulty - turns
+        if (score < 0) {score = 0}
         for (let i = 0; i < hs.length; i++)
         {
-            if (hs[i].score <= turns)
+            if (hs[i].score < score && !placed)
             {
+                let scorer = prompt("What is your name?", "")
+                hs.splice(i, 0, {
+                    
+                    id: i + 1,
+                    score: score,
+                    scorer: scorer
+                      
+                });
 
+                hs.pop();
+
+                placed = true
+
+                const configObj = {
+                    method: "PATCH",
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(hs[i])
+                }
+
+                fetch(`http://localhost:8001/highscores/${i + 1}`, configObj)
             }
+            else if (placed)
+            {
+                hs[i].id++
+
+                const configObj = {
+                    method: "PATCH",
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(hs[i])
+                }
+
+                fetch(`http://localhost:8001/highscores/${i + 1}`, configObj)
+            }
+
         }
+
+        setHighscores(hs)
+
     }
 
     function createBoard() {
@@ -130,9 +185,9 @@ function PracticeGameManager({signs}) {
     }
 
     function renderBoard() {
-
+        let i = 0;
         let refinedBoard = boardData.map(row => {
-            return <tr key={Math.floor(Math.random() * 100)} >{row.map(tile => {
+            return <tr key={`${i++}Row`} >{row.map(tile => {
             return <BoardTile key={tile.id} tileData={tile} onClickTile={handleAddClicked}/>})}</tr>
         });
 
@@ -179,12 +234,22 @@ function PracticeGameManager({signs}) {
                     <tr>
                         <th colSpan={difficulty}>Turns Taken: {turns}</th>
                     </tr>
+                    {showScores ? 
+                        <tr>
+                            <td colSpan={difficulty}>
+                                <Scoreboard highscores={highscores} />
+                                
+                            </td>
+                        </tr> : null
+                    }
                 </thead>
 
                 <tbody>
                 {renderBoard()}
                 </tbody>
             </table>
+            {showScores ? <button onClick={() => setShowScores(!showScores)} >Hide Scores</button> : 
+            <button onClick={() => setShowScores(!showScores)}>Show Highscores</button>}
         </div>
     )
 }

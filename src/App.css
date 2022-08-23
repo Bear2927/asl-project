@@ -186,3 +186,24 @@ td img {
     color: rgb(0, 94, 94);
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
+    
+.scoreboard {
+    list-style: none;
+    text-align: center;
+}
+
+.scoreboard p {
+    margin: 2px;
+}
+
+.board-tile:hover {
+    outline-color: darkslategray;
+    outline-offset: -4px;
+    outline-width: 4px;
+}
+
+.board-tile:active {
+    outline-color: darkslateblue;
+    outline-offset: -4px;
+    outline-width: 4px;
+}

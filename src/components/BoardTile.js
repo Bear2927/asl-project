@@ -20,7 +20,7 @@ function BoardTile({tileData, onClickTile}) {
     }
 
     return (
-        <td onClick={handleClick}>
+        <td onClick={handleClick} className="board-tile">
             {tileData.visible ? renderTile() : null}
         </td>
     )
