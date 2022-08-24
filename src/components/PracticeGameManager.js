@@ -12,6 +12,7 @@ function PracticeGameManager({signs}) {
     const [matchesMade, setMatchesMade] = useState(0);
     const [showScores, setShowScores] = useState(false);
     
+    const diffColor = ["lightgreen", "yellow", "orange", "red"]
 
     useEffect(() => {
         fetch("http://localhost:8001/highscores")
@@ -26,6 +27,8 @@ function PracticeGameManager({signs}) {
     function handleUpdateDifficulty(e) {
         setDifficulty(e.target.value)
         setBoardData([])
+        setTurns(0);
+        setMatchesMade(0)
     }
 
     function handleAddClicked(tileData) {
@@ -236,20 +239,17 @@ function PracticeGameManager({signs}) {
                 <h2>Practice your ASL Knowledge!</h2>
                 <p>Match hidden pairs, do it in the least amount of moves to get a better score!</p>
             </div>
-            <table>
+
+            <select className="std-style inp-style" onChange={handleUpdateDifficulty} style={{"backgroundColor": diffColor[(difficulty/2) - 1]}}>
+                            <option style={{"backgroundColor": "lightgreen"}} value={2}>Easy Mode: 2 x 2</option>
+                            <option style={{"backgroundColor": "yellow"}}value={4}>Medium Mode: 4 x 4</option>
+                            <option style={{"backgroundColor": "orange"}}value={6}>Hard Mode: 6 x 6</option>
+                            <option style={{"backgroundColor": "red", "color": "white"}}value={8}>Extreme Mode: 8 x 8</option>
+            </select>
+            <table className="std-style brd-style">
                 <thead>
                     <tr>
                         <th className="std-style" colSpan={difficulty}>Practice Game</th>
-                    </tr>
-                    <tr >
-                        <td colSpan={difficulty} className="practice-select std-style">
-                            <select onChange={handleUpdateDifficulty}>
-                                <option value={2}>Easy Mode: 2 x 2</option>
-                                <option value={4}>Medium Mode: 4 x 4</option>
-                                <option value={6}>Hard Mode: 6 x 6</option>
-                                <option value={8}>Extreme Mode: 8 x 8</option>
-                            </select>
-                        </td>
                     </tr>
                     <tr>
                         <th colSpan={difficulty}>Turns Taken: {turns}</th>

@@ -6,7 +6,7 @@ function Footer() {
             <footer className="footer" style={{"paddingBottom": "20px"}}>
                 <p>ASL Learning App</p>
                 <div>
-                    <a href="https://www.nad.org/resources/american-sign-language/">Learn More!</a>
+                    <a style={{"padding": "3px"}} href="https://www.nad.org/resources/american-sign-language/">Learn More!</a>
                 </div>
             </footer>
         </div>

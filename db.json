@@ -179,18 +179,18 @@
   "highscores": [
     {
       "id": 1,
-      "score": 17,
+      "score": 24,
       "scorer": "Charlotte"
     },
     {
       "id": 2,
-      "score": 8,
-      "scorer": "Barrett"
+      "score": 17,
+      "scorer": "Charlotte"
     },
     {
       "id": 3,
       "score": 8,
-      "scorer": "Charlotte"
+      "scorer": "Barrett"
     },
     {
       "id": 4,
@@ -199,33 +199,33 @@
     },
     {
       "id": 5,
+      "score": 8,
+      "scorer": "Charlotte"
+    },
+    {
+      "id": 6,
       "score": 6,
       "scorer": "Pumpkin"
     },
     {
-      "id": 6,
-      "score": 2,
-      "scorer": null
-    },
-    {
       "id": 7,
       "score": 2,
-      "scorer": null
+      "scorer": "Player3"
     },
     {
       "id": 8,
       "score": 2,
-      "scorer": "Empty"
+      "scorer": null
     },
     {
       "id": 9,
       "score": 2,
-      "scorer": "Empty"
+      "scorer": null
     },
     {
       "id": 10,
       "score": 2,
-      "scorer": "Charlotte"
+      "scorer": null
     }
   ]
 }

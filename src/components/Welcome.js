@@ -15,7 +15,7 @@ function Welcome() {
     }, [])
 
     return (
-        <div className="welcome">
+        <div className="welcome std-style">
             <h1>Welcome to Sign Me Up</h1>
             <p>{welcomeTxt}</p>
          

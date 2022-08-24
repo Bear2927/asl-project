@@ -5,6 +5,7 @@ html, body {
     color: #1E1E1E;
 }
 
+
 .root {
     width: 100%;
 }
@@ -30,6 +31,11 @@ html {
     border-style: groove;
     border-width: 10px;
     border-color: orange;
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: -1px; 
+    
 }
 
 .footer p {
@@ -44,6 +50,10 @@ html {
     border-color: orange;
     width: 20%;
     margin-bottom: 10px;
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: -1px; 
     
 }
 
@@ -63,6 +73,10 @@ html {
     padding: 2px;
     margin-top: 8px;
     margin-bottom: 12px;
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: -1px; 
 
 }
 
@@ -70,11 +84,6 @@ html {
     text-align: center;
     margin: 10%;
     height: 100%;
-    background-color: peachpuff;
-    border-radius: 25px;
-    border-style: groove;
-    border-width: 10px;
-    border-color: orange;
 }
 
 .welcome p {
@@ -124,18 +133,12 @@ header {
     max-height: 90%;
 }
 
-nav#navbar{
+.navbar{
     text-align: center;
     font-size: larger;
     font-weight: bold;
     vertical-align: middle; 
-    background-color: orange;
-    border-radius: 25px;
-    border-style: groove;
-    border-width: 10px;
-    border-color: orange;
     margin: auto;
-    
 }
 
 .forms {
@@ -273,6 +276,38 @@ td img {
     border-style: groove;
     border-width: 10px;
     border-color: orange;
+
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: -1px; 
+}
+
+.inp-style {
+    padding: 10px;
+    background-color: white;
+}
+
+.brd-style {
+    background-color: sandybrown;
+}
+
+.btn-style {
+    background-color: orange;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
+
+    font-weight: bold;
+
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: -1px; 
+
+    
+    padding: 10px;
 }
 
 .game-top {
