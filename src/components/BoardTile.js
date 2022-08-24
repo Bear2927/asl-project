@@ -15,7 +15,7 @@ function BoardTile({tileData, onClickTile}) {
         }
         else
         {
-            return <p>{tileData.sign.meaning}</p>
+            return <p className="boardtilemeaning">{tileData.sign.meaning}</p>
         }
     }
 

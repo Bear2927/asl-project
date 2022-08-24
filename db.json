@@ -185,7 +185,7 @@
     {
       "id": 2,
       "score": 8,
-      "scorer": "Charlotte"
+      "scorer": "Barrett"
     },
     {
       "id": 3,
@@ -194,38 +194,38 @@
     },
     {
       "id": 4,
+      "score": 8,
+      "scorer": "Charlotte"
+    },
+    {
+      "id": 5,
       "score": 6,
       "scorer": "Pumpkin"
     },
     {
-      "id": 5,
-      "score": 2,
-      "scorer": "Empty"
-    },
-    {
       "id": 6,
       "score": 2,
-      "scorer": "Empty"
+      "scorer": null
     },
     {
       "id": 7,
       "score": 2,
-      "scorer": "Charlotte"
+      "scorer": null
     },
     {
       "id": 8,
       "score": 2,
-      "scorer": "Charlotte"
+      "scorer": "Empty"
     },
     {
       "id": 9,
       "score": 2,
-      "scorer": null
+      "scorer": "Empty"
     },
     {
       "id": 10,
       "score": 2,
-      "scorer": null
+      "scorer": "Charlotte"
     }
   ]
 }
