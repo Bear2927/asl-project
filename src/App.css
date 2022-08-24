@@ -231,6 +231,7 @@ td img {
 }
 
 .glossary{
+    padding-top: 50px;
     padding-bottom: 125px;
 }
 
@@ -242,8 +243,24 @@ td img {
 .glossaryheader{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    font-size: 45px;
     color: orange;
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
+    width: 200px;
+    height: 75px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    margin-top: 20px;
+    padding: 35px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
 }
     
 .scoreboard {
@@ -270,5 +287,18 @@ td img {
 .board-tile img {
     max-width: 90%;
     max-height: 90%;
+}
 
+.glossarymeaning{
+    font-size: 300%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+
+.boardtilemeaning{
+    font-size: 200%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
