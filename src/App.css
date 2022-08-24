@@ -24,8 +24,8 @@ html {
     clear: both;
     background-color: orange;
     position:fixed;
-    bottom:-10px;
-    width: 100%;
+    bottom: -25px;
+    width: 98.75%;
     border-radius: 25px;
     border-style: groove;
     border-width: 10px;
@@ -87,15 +87,10 @@ img {
     width: auto;
 }
 
-#inputbar {
+.inputbar {
     text-align: center;
     border: 2px solid black;
     padding-bottom: 20px;
-    background-color: peachpuff;
-    border-radius: 25px;
-    border-style: groove;
-    border-width: 10px;
-    border-color: orange;
     width: 60%;
     margin: auto;
     margin-top: 3%;
@@ -106,31 +101,27 @@ img {
     overflow-y: auto;
     height: 450px;
     padding-bottom: 125px;
+    text-align: center;
 }
 
 .card {
     float: left;
-    width: 12.5%;
-    outline-offset: -1px;
-    outline: 1px solid black;
-    height: 270px;
-    background-color: white;
+    width: 11%;
 }
 
 header {
     height: 40px;
-   
-   
 }
 
 .card p {
     text-align: center;
-    height: 70px;
+    vertical-align: middle;
 }
 
 .card-images {
     text-align: center;
-    width: 100%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 nav#navbar{
@@ -149,11 +140,6 @@ nav#navbar{
 
 .forms {
     text-align: center;
-    background-color: peachpuff;
-    border-radius: 25px;
-    border-style: groove;
-    border-width: 10px;
-    border-color: orange;
     width: 60%;
     margin: auto;
     margin-top: 10%;
@@ -165,11 +151,6 @@ nav#navbar{
     display: inline;
     font-size: large;
     color: black;
-    background-color: peachpuff;
-    border-radius: 25px;
-    border-style: groove;
-    border-width: 10px;
-    border-color: orange;
     margin-top: 10px;
     margin-left: 5%;
     margin-right: 5%;
@@ -183,11 +164,6 @@ nav#navbar{
 }
 
 td {
-    background-color: peachpuff;
-    border-radius: 25px;
-    border-style: groove;
-    border-width: 10px;
-    border-color: orange;
     width: 125px;
     height: 125px;
     text-align: center;
@@ -230,6 +206,8 @@ td img {
     padding-bottom: 10px;
 }
 
+
+
 .glossary{
     padding-bottom: 125px;
 }
@@ -271,4 +249,17 @@ td img {
     max-width: 90%;
     max-height: 90%;
 
+}
+
+.std-style {
+    background-color: peachpuff;
+    border-radius: 25px;
+    border-style: groove;
+    border-width: 10px;
+    border-color: orange;
+}
+
+.game-top {
+    width: 80%;
+    margin: auto;
 }

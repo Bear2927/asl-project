@@ -7,11 +7,11 @@ function NavBar() {
       <header>
         <nav id="navbar">
           <ul>
-              <Link className="link" to="/">Home</Link>  |        
-              <Link className="link" to="/form">Add Word</Link> |
-              <Link className="link" to="/input">Translate</Link> | 
-              <Link className="link" to="/practice">Practice</Link> |
-              <Link className="link" to="/glossary">Glossary</Link>
+              <Link className="link std-style" to="/">Home</Link>  |        
+              <Link className="link std-style" to="/form">Add Word</Link> |
+              <Link className="link std-style" to="/input">Translate</Link> | 
+              <Link className="link std-style" to="/practice">Practice</Link> |
+              <Link className="link std-style" to="/glossary">Glossary</Link>
           </ul>
             
             

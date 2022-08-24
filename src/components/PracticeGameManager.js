@@ -232,15 +232,17 @@ function PracticeGameManager({signs}) {
 
     return (
         <div className="practice-game">
-            <h2>Practice your ASL Knowledge!</h2>
-            <p>Match hidden pairs, do it in the least amount of moves to get a better score!</p>
+            <div className="std-style game-top">
+                <h2>Practice your ASL Knowledge!</h2>
+                <p>Match hidden pairs, do it in the least amount of moves to get a better score!</p>
+            </div>
             <table>
                 <thead>
                     <tr>
-                        <th colSpan={difficulty}>Practice Game</th>
+                        <th className="std-style" colSpan={difficulty}>Practice Game</th>
                     </tr>
                     <tr >
-                        <td colSpan={difficulty} className="practice-select">
+                        <td colSpan={difficulty} className="practice-select std-style">
                             <select onChange={handleUpdateDifficulty}>
                                 <option value={2}>Easy Mode: 2 x 2</option>
                                 <option value={4}>Medium Mode: 4 x 4</option>

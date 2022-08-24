@@ -12,7 +12,7 @@ function SignForm({formMeaning, formImage, onChangeMeaning, onChangeImage, onSub
         onSubmitRemove()
     }
     return (
-        <div className="forms">
+        <div className="forms std-style">
 
             <h2>Help us grow!</h2>
 
