@@ -6,7 +6,7 @@ function Glossary({signs, searchInput}) {
     return(
         <div className="glossary">
             <div className="filter">
-                <h1 className="glossaryheader">Search Glossary</h1>
+                <h1 className="glossaryheader">Glossary</h1>
                 <input type="text" placeholder="Search Input..." onChange={searchInput}></input>
             </div>
 
@@ -18,7 +18,7 @@ function Glossary({signs, searchInput}) {
                     </tr>
                 </thead>
                 <tbody>
-                        {signs.map(sign => <tr key={sign.id}><td>{sign.meaning}</td><td><img src={sign.image} alt={sign.meaning}/></td></tr>)}
+                        {signs.map(sign => <tr key={sign.id}><td className="glossarymeaning">{sign.meaning}</td><td><img src={sign.image} alt={sign.meaning}/></td></tr>)}
                 </tbody>
             </table>
         </div>
