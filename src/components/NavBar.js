@@ -5,7 +5,7 @@ function NavBar() {
 
     return(
       <header>
-        <nav id="navbar">
+        <nav className="navbar std-style" style={{"backgroundColor": "orange"}}>
           <ul>
               <Link className="link std-style" to="/">Home</Link>  |        
               <Link className="link std-style" to="/form">Add Word</Link> |
