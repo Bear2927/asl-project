@@ -4,7 +4,7 @@ function InputBar({input, setInput}) {
 
     return (
         <div className="inputbar std-style">
-            <h3>Translate a phrase: </h3>
+            <h2>Translate a phrase: </h2>
             <input className="std-style inp-style" onChange={setInput} type="text" placeholder="enter phrase..." value={input}/>
         </div>
     )
