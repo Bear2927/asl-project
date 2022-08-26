@@ -268,8 +268,8 @@ function PracticeGameManager({signs}) {
                 {renderBoard()}
                 </tbody>
             </table>
-            {showScores ? <button onClick={() => setShowScores(!showScores)} >Hide Scores</button> : 
-            <button onClick={() => setShowScores(!showScores)}>Show Highscores</button>}
+            {showScores ? <button className="btn-style" onClick={() => setShowScores(!showScores)} >Hide Scores</button> : 
+            <button className="btn-style" onClick={() => setShowScores(!showScores)}>Show Highscores</button>}
         </div>
     )
 }
